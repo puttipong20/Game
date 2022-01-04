@@ -1,0 +1,76 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container{
+    width:70%;
+    min-height:100vh;
+    height:auto;
+    margin:0 auto;
+    padding-top:40px;
+}
+ul li{
+    display:inline-block;
+    margin-right: 20px;
+}
+ul li i{
+    width:50px;
+}
+.icon{
+    text-align:center;
+}
+.pop{
+    margin-top:50px;
+    width:100%;
+    text-align:center;
+    background-color:gainsboro;
+}
+.pop img{
+    height:100px;
+    border:1px solid black;
+    box-shadow:0 0 5px 5px black;
+}
+#HERO{
+    margin-top:50px;
+    background-color:antiquewhite;
+    border:1px solid black;
+}
+#HERO img{
+    width:auto;
+    height:100px;
+}
+.hp{
+    margin-top:10px;
+    border:1px solid black;
+    width:100px;
+    height:20px;
+}
+.c-hp{
+    margin:0;
+    padding:0;
+    background-color:green;
+    width:100px;
+    height:20px;
+    border:1px solid black;
+}
+.avatar{
+    width:60%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+.btn{
+    display:flex;
+    justify-content:center;
+}
+.atk{
+    margin:10px;
+}
+button{
+    padding:10px;
+    background-color: gray;
+}
+button:hover{
+    background-color: black;
+    color:white;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon</title>
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+
+<body>
+    <div class="container" >
+        <div class="icon" id="icon">
+            <ul>
+                <li @click='plus(1)'><i class="fas fa-heart"></i>{{heart}}</li>
+                <li @click='plus(2)'><i class="fas fa-surprise"></i> {{wow}} </li>
+                <li @click='plus(3)'><i class="fas fa-smile-wink"></i> {{smile}} </li>
+                <li @click='minus(1)'><i class="fas fa-sad-tear"></i> {{sad}} </li>
+                <li @click='minus(2)'><i class="fas fa-sad-cry"></i> {{cry}} </li>
+                <li> sum : {{sumary}} </li>
+            </ul>
+        </div>
+        <div class="pop" id="popCat">
+            <h2>click me!!</h2>
+            <img src="picture/Ima.jpg" alt="" @click='pop' id="click">
+            <p>pop : {{time}} </p>
+        </div>
+        <div id="HERO">
+            <div class="avatar">
+                <div class="hero">
+                    <div class="hp">
+                        <div class="c-hp" v-bind:style="{width:hpH + 'px'}"></div>
+                    </div>
+                    <img src="../picture/hero.png" alt="">
+                    
+                </div>
+                <div class="monster">
+                    <div class="hp">
+                        <div class="c-hp" v-bind:style="{width:hpM + 'px'}"></div>
+                    </div>
+                    <img src="../picture/monster.png" alt="">
+                    
+                </div>
+            </div>
+            <div class="btn">
+                <div class="actack atk">
+                    <button @click='atk(1)'>Actack</button>
+                </div>
+                <div class="special-actack atk">
+                    <button @click='atk(2)' v-if="status">Ultimate</button>
+                </div>
+                <div class="reset atk">
+                    <button @click='atk(3)'>Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="icon.js"></script>
+    <script src="hero.js"></script>
+    <script src="pop.js"></script>
+</body>
+
+</html>
